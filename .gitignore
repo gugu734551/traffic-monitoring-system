@@ -1,0 +1,48 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+env/
+venv/
+.venv/
+
+# ---- 运行时产物 ----
+# SQLite 用户数据库（含账号数据，不入库）
+user_data.db
+*.db
+*.sqlite3
+
+# 检测/导出结果
+results/
+# 上传的用户头像
+resources/user_avatars/
+
+# 模型权重（体积大，按 README 说明自行准备）
+model/*.pt
+model/*.pth
+model/*.onnx
+*.weights
+
+# 测试视频与抽帧（体积大）
+test_media/
+
+# ---- 论文相关（不公开） ----
+*.doc
+*.docx
+*.pdf
+
+# ---- IDE / 操作系统 ----
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ---- 日志 ----
+*.log
+logs/
